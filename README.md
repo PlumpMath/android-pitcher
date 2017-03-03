@@ -8,7 +8,6 @@ Android app to change the pitch of a sound. **(Old project ;)**
 ```console
 $ git clone git@github.com:david-alejandro-reyes-milian/android-pitcher.git
 ```
-2. Import it in AndroidStudio.
 
 ## Contributing
 
