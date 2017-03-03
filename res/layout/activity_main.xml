@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:seekarc="http://schemas.android.com/apk/res/com.darm.audiopitcher"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.darm.audiopitcher.MainActivity" >
+
+	<ImageView
+		android:id="@+id/fondo"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_below="@+id/changePitchButton"
+		android:background="@drawable/fondo" />
+
+	<ImageView
+		android:id="@+id/regionEspecial"
+		android:layout_width="50dp"
+		android:layout_height="50dp"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:alpha="0"
+		android:background="@drawable/fondo" />
+
+	<ImageView
+		android:id="@+id/imagenIndicadoresSeekArc"
+		android:layout_width="320dp"
+		android:layout_height="320dp"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+		android:background="@drawable/indicador" />
+
+	<ImageView
+		android:id="@+id/imagenSeckArk"
+		android:layout_width="290dp"
+		android:layout_height="290dp"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+		android:background="@drawable/seckbarbuttonimage3" />
+
+	<com.triggertrap.seekarc.SeekArc
+		android:id="@+id/seekArc"
+		android:layout_width="240dp"
+		android:layout_height="240dp"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+		android:layout_gravity="center"
+		android:padding="30dp"
+		seekarc:rotation="180"
+		seekarc:startAngle="30"
+		seekarc:sweepAngle="300"
+		seekarc:touchInside="true" />
+
+	<Button
+		android:id="@+id/playButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/seekArc"
+		android:layout_centerHorizontal="true"
+		android:text="Play" />
+
+	<Button
+		android:id="@+id/pauseButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/playButton"
+		android:layout_centerHorizontal="true"
+		android:text="Pause" />
+
+	<Button
+		android:id="@+id/changePitchButton"
+		android:layout_width="100dp"
+		android:layout_height="100dp"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+		android:background="@drawable/seckbarbuttonimage3"
+		android:visibility="gone" />
+
+</RelativeLayout>
